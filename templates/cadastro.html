@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PlaylistWeb - Cadastro</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="bloco-login"> 
+            <h1 class="titulo">Criar Conta</h1>
+            
+            <form action="#" method="post"> <p class="label-input">Usuário</p>
+                <div class="input-group">
+                    <input type="text" placeholder="Nome de Usuário" maxlength="25" required>
+                </div>
+                
+                <p class="label-input">E-mail</p>
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail" maxlength="25" required>
+                </div>
+                
+                <p class="label-input">Senha</p>
+                <div class="input-group">
+                    <input type="password" placeholder="Senha" maxlength="25" required>
+                </div>
+                
+                <button type="submit" class="botao-entrar">CADASTRE-SE</button>
+            
+            </form>
+            
+            <p class="texto-cadastro">
+                Já Tem Uma Conta? <a href="{% url 'login' %}">Entre</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

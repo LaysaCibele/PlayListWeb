@@ -1,0 +1,108 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gayathri', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    
+    /* Fundo corrigido para preencher tudo sem repetir */
+    background: #060606 url('img/background.png') no-repeat center center fixed; 
+    background-size: cover;
+    overflow: hidden; /* Evita scrolls desnecessários */
+}
+
+.main-container {
+    /* Agora o container não precisa de tamanho próprio, 
+       ele apenas abraça o bloco e deixa o body centralizar tudo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-login {
+    /* O bloco escuro do mobile */
+    background-image: url('img/blocoLoginEsticado copy.png'); 
+    width: 330px;
+    height: auto; /* Deixa crescer conforme o conteúdo (Cadastro > Login) */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; /* Padding ajustado para o conteúdo não colar nas bordas */
+    box-sizing: border-box;
+    
+    /* Sombra opcional para destacar o balão do fundo escuro */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.titulo {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    width: 287px;
+    height: 59px;
+    background-color: #111111;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Para a label ficar em cima do input */
+    justify-content: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.label-input {
+    color: #FFFFFF;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-bottom: 2px;
+}
+
+.botao-entrar {
+    width: 283px;
+    height: 41px;
+    background-color: #FFFFFF;
+    color: #040303;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+
+.botao-entrar:hover {
+    background-color: #dddddd; /* Feedback visual de clique */
+}
+
+.texto-cadastro {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.texto-cadastro a {
+    color: #4763F6;
+    text-decoration: none;
+    font-weight: bold;
+}
