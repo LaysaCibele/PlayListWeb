@@ -1,0 +1,61 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ jogo.titulo }} - PlaylistWeb</title> 
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body style="overflow: auto;"> 
+
+    <div class="main-container">
+        
+        <div style="background-color: #111111; color: #FFFFFF; padding: 40px; border-radius: 15px; width: 80%; max-width: 900px; margin-top: 50px; margin-bottom: 50px;">
+            
+            <h1 class="titulo" style="font-size: 36px; margin-bottom: 10px;">{{ jogo.titulo }}</h1>
+            
+            {% if jogo.capaImagem %}
+                <img src="{{ jogo.capaImagem.url }}" alt="Capa de {{ jogo.titulo }}" style="max-width: 250px; border-radius: 10px; margin-bottom: 20px;">
+            {% endif %}
+            
+            <p><strong>Desenvolvedora:</strong> {{ jogo.desenvolvedora }}</p>
+            <p><strong>Plataforma:</strong> {{ jogo.plataforma }}</p>
+            <p><strong>Gênero:</strong> {{ jogo.genero }}</p>
+            <p><strong>Ano de Lançamento:</strong> {{ jogo.ano_lancamento }}</p>
+            
+            <h3 style="color: #4763F6; margin-top: 30px;">Descrição:</h3>
+            <p style="line-height: 1.6;">{{ jogo.descricao }}</p>
+            
+            <!-- Só mostra anotações se existir -->
+            {% if jogo.anotacoes %}
+                <h3 style="color: #4763F6;">Anotações:</h3>
+                <p>{{ jogo.anotacoes }}</p>
+            {% endif %}
+
+        
+            {% if jogo.linkWiki %}
+                <p style="margin-top: 20px;">
+                    <a href="{{ jogo.linkWiki }}" target="_blank" style="color: #4763F6; font-weight: bold; text-decoration: none;">Ler mais na Wiki ↗</a>
+                </p>
+            {% endif %}
+
+
+            {% if jogo.mapa %}
+                <h3 style="color: #4763F6; margin-top: 30px;">Mapa do Mundo:</h3>
+                <div style="width: 100%; text-align: center; margin-top: 15px;">
+                    <img src="{{ jogo.mapa.url }}" alt="Mapa de {{ jogo.titulo }}" style="max-width: 100%; border-radius: 10px; border: 2px solid #333;">
+                </div>
+            {% endif %}
+
+            <hr style="border: 1px solid #333; margin: 30px 0;">
+            
+            <p style="color: #888;"><em>Aqui entrará o botão "Adicionar à Biblioteca / Selecionar Status"</em></p>
+
+        </div>
+    </div>
+
+</body>
+</html>
