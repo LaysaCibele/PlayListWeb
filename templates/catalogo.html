@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PlaylistWeb - Catálogo</title>
+</head>
+<body>
+    
+    <h1>Bem-vindo ao Catálogo de Jogos!</h1>
+    
+    <p>Você está logado como: <strong>{{ user.username }}</strong></p>
+    
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Sair da Conta</button>
+    </form>
+
+</body>
+</html>

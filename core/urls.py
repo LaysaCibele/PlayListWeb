@@ -23,4 +23,5 @@ urlpatterns = [
     
     # Agora apontamos para o urls.py da pasta 'listas'
     path('', include('usuarios.urls')), 
+    
 ]
