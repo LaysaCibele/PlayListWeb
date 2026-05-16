@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def biblioteca_view(request):
+    return render(request, 'biblioteca.html')

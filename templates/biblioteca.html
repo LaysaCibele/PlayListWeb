@@ -1,0 +1,43 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PlaylistWeb - Biblioteca</title>
+    <link rel="stylesheet" href="{% static 'biblioteca.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="{% static 'img/PlaylistLogo.png' %}" alt="logo" id="logo">
+        
+        <div class="abas">
+            <a href="{% url 'biblioteca' %}">Biblioteca</a>
+            <a href="{% url 'catalogo' %}">Catálogo</a>
+        </div>
+
+        <div class="user">
+            <p>Usuário: <strong>{{ user.username }}</strong></p>
+            
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit" id="sair">Sair</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        
+    </main>
+
+    <footer>
+        <p style="color: #b5b4b4;">&copy; 2026 PlayListWeb - Todos os direitos reservados.</p>
+        <img src="{% static 'img/PlaylistLogo.png' %}" alt="logo" id="logo">
+    </footer>
+
+    </body>
+</html>

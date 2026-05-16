@@ -1,0 +1,41 @@
+[33mcommit 623574fa883a9d340277ed16f448243debe53e98[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Laysa <laysacibele23@gmail.com>
+Date:   Thu May 14 15:39:35 2026 -0300
+
+    feat: implementa model ListaJogos e estabelece relação entre User e Jogo. Processamento de imagns: pillow e rotas de mídia.
+
+[33mcommit c8f095d88b271b11d97091029e9282fbfd3f0593[m
+Author: Laysa <laysacibele23@gmail.com>
+Date:   Thu May 14 15:14:57 2026 -0300
+
+    feat: Models da página específica
+
+[33mcommit 5ce59251fb9346a02b402ff200855e4a0748290f[m
+Author: Laysa <laysacibele23@gmail.com>
+Date:   Thu May 14 14:54:05 2026 -0300
+
+    feat: Autenticação de usuário finalizada.
+
+[33mcommit 1b2b7ddb698eca8b3cb05d0af8bedf359b41acf8[m
+Author: CaioCsdSilvaa <cc661235@gmail.com>
+Date:   Wed May 13 13:47:36 2026 -0300
+
+    Criação de páginas: login, cadastro
+
+[33mcommit d345e79ff5294f233e00fe4ec4ab46dbd8cb3619[m
+Author: leticia <leticialimas2006@gmail.com>
+Date:   Tue Mar 3 09:28:21 2026 -0300
+
+    criando as pastas templates e static
+
+[33mcommit d774b4720c0883f9706a6e85a1ab9e1f14b7ad65[m
+Author: Laysa <laysacibele23@gmail.com>
+Date:   Mon Mar 2 14:33:14 2026 -0300
+
+    chore: Estrutura inicial: Core e Apps (usuarios, jogos, listas)
+
+[33mcommit 225e6935f383ad32da9c01b3afbaef992f0493c9[m
+Author: Laysa Cibele <138512761+LaysaCibele@users.noreply.github.com>
+Date:   Fri Feb 27 14:06:49 2026 -0300
+
+    Initial commit
